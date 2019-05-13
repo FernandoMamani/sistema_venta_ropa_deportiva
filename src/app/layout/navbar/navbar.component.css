@@ -1,0 +1,23 @@
+img:hover{
+	transform: scale(0.9); 
+	border-radius: 30px; 
+	
+}
+img{
+	transition: all 0.5s linear;
+	padding-top: 10px;
+}
+h1{
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+	text-transform: uppercase;
+	color: rgb(14, 12, 12);
+	text-shadow: 0 8px 9px #0a0606, 0px -2px 1px #bbbbbb;
+	font-weight: bold;
+	letter-spacing: -4px;
+	text-align: center;
+	position: relative;
+	top: 10%;
+	left:40%;
+	transform: translate(-50%,-50%);
+	border-radius: 2px;
+}
