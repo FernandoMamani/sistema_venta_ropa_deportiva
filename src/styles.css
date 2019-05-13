@@ -6,7 +6,19 @@ iso-root {
   min-height: 100vh;
   flex-direction: column;
 }
-
+nav {
+    color: #fff;
+    background-color: #3a3737;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+/* #ee6e73;*/
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #3a3737;
+}
 main {
   flex: 1 0 auto;
 }

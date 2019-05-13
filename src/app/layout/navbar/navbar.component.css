@@ -1,7 +1,7 @@
 img:hover{
 	transform: scale(0.9); 
 	border-radius: 30px; 
-	
+	background-color: #8585e9;
 }
 img{
 	transition: all 0.5s linear;
@@ -21,3 +21,11 @@ h1{
 	transform: translate(-50%,-50%);
 	border-radius: 2px;
 }
+body, header{
+	color:#cacaf3;
+	/*background: url(https://www.championstore.com/wcsstore/HanesEuropeSAS_B2C/images/logo.png);*/
+	/*background-color: #cecef0;*/
+	/*position: relative;*/
+
+}
+
