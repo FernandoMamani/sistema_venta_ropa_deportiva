@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: 'store',
     loadChildren: './store/store.module#StoreModule'
-  }
+  },{ path: 'login', loadChildren: './login/login.component.html'}
 ];
 
 @NgModule({
