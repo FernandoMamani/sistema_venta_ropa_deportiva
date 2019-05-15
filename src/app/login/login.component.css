@@ -1,0 +1,22 @@
+.login {
+  border: 0 solid rgb(56, 51, 51) !important;
+  text-align: center;
+}
+#email,#password{  
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+label{
+text-align: center;
+text-overflow: ellipsis;
+color: rgb(63, 59, 59);
+}
+input{
+  text-align: center;
+}
+#login{
+  text-align: center;
+}
