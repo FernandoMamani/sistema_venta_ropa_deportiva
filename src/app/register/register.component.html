@@ -1,0 +1,36 @@
+
+<body> 
+        
+<div class="container form-control">
+        <h4>Registrarse como nuevo usuario</h4>
+<form form="form_reg" action="" name="f1" >
+        
+        <label>Nombre:</label>
+        <input type="text" placeholder="Nombre" pattern="[A-Za-z]{1,30}" required autofocus>
+        <label>Apellido(s)</label>
+        <input type="text" placeholder="Apellido(s)" pattern="[A-Za-z]{1,30}" required autofocus>
+        <label>E-mail</label>
+        <input type="email" placeholder="Correo" required>
+        <p>La contraseña debe contener al menos 8 caracteres y maximo 12</p>
+        <label>Contraseña</label>
+        <input type="password" placeholder="Ingrese contraseña" pattern="[A-Za-z,0-9]{8,12}" name="clave1">
+        <label>Confirmar contraseña</label>
+        <input type="password" placeholder="Confirme contraseña" name="clave2">
+           
+       
+    <input type="submit" class="btn_submit" value="Registrar">
+    <input class="btn_reset" type="reset" value="Limpiar">
+</form>
+</div>
+<script>
+function comprobarClave(){
+        clave1=document.f1.clave1.value
+        clave2=document.f1.clave2.value
+
+        if(clave1==clave2)
+        alert(" ")
+        else
+        alert("Las claves no coinciden..")
+}
+</script>
+</body>

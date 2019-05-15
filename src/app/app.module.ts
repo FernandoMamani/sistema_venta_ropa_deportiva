@@ -8,10 +8,10 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 
 import { AngularFireModule } from '@angular/fire';
-import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
    AngularFirestoreModule, AppRoutingModule, LayoutModule],
   bootstrap: [AppComponent]

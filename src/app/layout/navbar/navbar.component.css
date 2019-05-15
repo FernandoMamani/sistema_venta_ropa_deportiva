@@ -21,3 +21,35 @@ h1{
 	transform: translate(-50%,-50%);
 	border-radius: 2px;
 }
+.cotainer{
+	max-width: 450px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+}
+.input, .btn__submit, .btn__reset{
+	background-color: #EFEFEF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+.btn__reset {
+	background-color: #EDA135;
+}
+
+.btn__submit:hover {
+	background-color: #4C9ED9;
+}
+
+.btn__reset:hover{
+	background-color: #FA9535;
+}
