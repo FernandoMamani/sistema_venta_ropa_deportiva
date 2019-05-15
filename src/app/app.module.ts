@@ -9,10 +9,11 @@ import { LayoutModule } from './layout/layout.module';
 
 import { AngularFireModule } from '@angular/fire';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
    AngularFirestoreModule, AppRoutingModule, LayoutModule],
   bootstrap: [AppComponent]
