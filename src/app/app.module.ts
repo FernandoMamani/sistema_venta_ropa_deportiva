@@ -9,13 +9,17 @@ import { LayoutModule } from './layout/layout.module';
 
 import { AngularFireModule } from '@angular/fire';
 import { LoginComponent } from './login/login.component';
+import {FormsModule} from '@angular/forms';
+import { from } from 'rxjs';
 
 
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
-   AngularFirestoreModule, AppRoutingModule, LayoutModule],
+   AngularFirestoreModule, AppRoutingModule,
+   FormsModule,
+   LayoutModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {
