@@ -8,13 +8,16 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 
 import { AngularFireModule } from '@angular/fire';
-
+import {CarritoFirebaseService} from './carrito/carrito-firebase.service';
 
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
    AngularFirestoreModule, AppRoutingModule, LayoutModule],
+   providers: [
+   CarritoFirebaseService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

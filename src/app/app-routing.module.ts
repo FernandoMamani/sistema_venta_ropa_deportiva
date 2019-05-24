@@ -18,7 +18,15 @@ const routes: Routes = [
 {
   path:'category',
   loadChildren: './category/category.module#CategoryModule'
-}
+
+  },
+  {
+    path: 'carrito',
+    loadChildren: './carrito/carrito.module#CarritoModule'
+  }
+
+
+
 
 ];
 
