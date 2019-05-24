@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 
 import { AngularFireModule } from '@angular/fire';
-import { InventarioComponent } from './inventario/inventario.component';
+
 
 
 @NgModule({
-  declarations: [AppComponent, InventarioComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
    AngularFirestoreModule, AppRoutingModule, LayoutModule],
   bootstrap: [AppComponent]
