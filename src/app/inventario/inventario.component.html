@@ -6,21 +6,25 @@
   <form form="form_reg" action="" name="f1" >
           
           <label>Codigo:</label>
-          <input type="number" placeholder="Codigo">
+          <input type="number" placeholder="Codigo" required>
           <label>Categoria</label>
-          <input type="text" placeholder="Categoria">
+          <input type="text" name="Categoria" placeholder="Categoria"required pattern="(Hombres|Mujeres|Infantes)" title="Hombres,Mujeres,Infantes" maxlength="8">
           <label>Descripcion</label>
-          <input type="text" placeholder="Descripcion">
+          <input type="text" placeholder="Descripcion" required maxlength="40">
           <label>Color</label>
-          <input type="text" placeholder="Color">
+          <input type="text" placeholder="Color"required>
           <label>Talla:</label>
-          <input type="number" placeholder="Talla">
+          <input type="text"  name="talla" placeholder="Talla" required pattern="(S|M|L|XL)" title="S,M,L y XL" required maxlength="2" pattern="[A-Za-z]">
           <label>Cantidad:</label>
-          <input type="number" placeholder="Cantidad">
+          <input type="number" placeholder="Cantidad" required>
           <label>Presio:</label>
+
+
+
           <input type="number" placeholder="Precio">
           <label>Margen de Descuento si aplica:</label>
           <input type="number" placeholder="Margen de descuento si aplica">
+
          
           
           
