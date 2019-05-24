@@ -11,14 +11,23 @@ const routes: Routes = [
     path: 'register',
     loadChildren: './register/register.module#RegisterModule'
   },
+  {
+    path:'inventario',
+    loadChildren: './inventario/inventario.module#InventarioModule'
+  },
 {
   path:'category',
   loadChildren: './category/category.module#CategoryModule'
+
   },
   {
     path: 'carrito',
     loadChildren: './carrito/carrito.module#CarritoModule'
   }
+
+
+
+
 ];
 
 @NgModule({
