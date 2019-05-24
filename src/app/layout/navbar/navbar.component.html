@@ -22,7 +22,7 @@
            <li><a routerLink="/category" >Hombres</a></li>
               <li><a routerLink="/category/mujeres" >Mujeres</a></li>
               <li><a routerLink="/category/infantes" >Infantes</a> </li>           
-             <li><a href="/carrito"><img src="assets/img/carrito_1.png" ><span style="border:s1px dotted blue; ">1</span></a></li>
+             <li><a routerLink="/carrito"><img src="assets/img/carrito_1.png" ><span style="border:s1px dotted blue; ">{{carritoService.enCarrito.length}}</span></a></li>
           </ul>
         </div>
       </div>
