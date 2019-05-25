@@ -10,10 +10,12 @@ import { LayoutModule } from './layout/layout.module';
 import { AngularFireModule } from '@angular/fire';
 import {CarritoFirebaseService} from './carrito/carrito-firebase.service';
 
+import { AngularFireAuthModule } from "@angular/fire/auth";
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AngularFireModule.initializeApp(environment.firebase),
-   AngularFirestoreModule, AppRoutingModule, LayoutModule],
+   AngularFirestoreModule, AppRoutingModule, LayoutModule,AngularFireAuthModule],
    providers: [
    CarritoFirebaseService
    ],

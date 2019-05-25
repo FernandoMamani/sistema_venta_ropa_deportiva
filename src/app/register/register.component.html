@@ -3,7 +3,7 @@
         
 <div class="container form-control">
         <h4>Registrarse como nuevo usuario</h4>
-<form form="form_reg" action="" name="f1" >
+<form form="form_reg" (ngSubmit)="registrar()" name="f1" >
         
         <label>Nombre:</label>
         <input type="text" placeholder="Nombre" pattern="[A-Za-z]{1,30}" required autofocus>
@@ -18,7 +18,8 @@
         <input type="password" placeholder="Confirme contraseña" name="clave2">
            
        
-    <input type="submit" class="btn_submit" value="Registrar">
+   
+   <a href="/store" class="btn btn-primary">Registrar</a>
     <input class="btn_reset" type="reset" value="Limpiar">
 </form>
 </div>
