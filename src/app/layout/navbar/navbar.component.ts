@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import {CarritoFirebaseService} from '../../carrito/carrito-firebase.service';
+import { Store, select } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Product } from 'src/app/models/product';
 
 @Component({
-  selector: 'iso-navbar',
+  selector: 'layout-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-    constructor(public carritoService: CarritoFirebaseService) {
-    }
+
+  countProducts: number;
+  shopping_cart: Observable<Object>;
+  
+  constructor(private storeProduct: Store<{ shopping_cart: Array<Product[]> }>) {
+    this.shopping_cart = storeProduct.pipe( select('shopping_cart'));
+    this.shopping_cart.subscribe( (res: Product[]) => this.countProducts = res.length )
+  }
 }

@@ -1,0 +1,39 @@
+<div class="container py-5 bg-faded">
+    <div>
+        <div class="form-row">
+            <div class="col-md-3 mb-3">
+                <ng-multiselect-dropdown 
+                    [placeholder]="'Seleccione una talla'"
+                    [data]="dropdownListSize"
+                    name="size"
+                    [(ngModel)]="filters.size"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                >
+                </ng-multiselect-dropdown>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <ng-multiselect-dropdown 
+                    [placeholder]="'Seleccione categoria'"
+                    [data]="dropdownListSex"
+                    name="sex"
+                    [(ngModel)]="filters.sex"
+                    [settings]="dropdownSettings"
+                    (onSelect)="onItemSelect($event)"
+                >
+                </ng-multiselect-dropdown>
+            </div>
+        </div>
+
+    </div>
+    <h3 id="title">PRODUCTOS <img src="https://www.championstore.com/wcsstore/HanesEuropeSAS_B2C/images/logo.png" width="250" alt="Logo Shoes store"></h3>
+    <div class="card-columns">
+        <app-product-card [product]="product" *ngFor="let product of products"></app-product-card>
+    </div>
+    <div style="text-align: center" *ngIf="products?.length == 0">
+        <h3>
+            No hay productos registrados aun en el inventario
+        </h3>
+    </div>
+  </div>
